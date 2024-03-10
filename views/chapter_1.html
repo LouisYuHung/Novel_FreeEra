@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+        <script src="../basic_setting.js"></script>
+        <script src="../table_of_contents.js"></script>
+        <script src="../content/chapter_1.js"></script>
+        <!-- <script src="../baseClass/Person.js"></script> -->
+        <!-- <script src="../characters/LiYongDi.js"></script> -->
+        <title></title>
+    </head>
+    <body></body>
+</html>
+<script>
+$(function () {
+    $('head title').text(basicSetting.novelName + ' - ' + CHAPTERS[0]);
+});
+console.log(paragraphs);
+
+let display_p = [];
+paragraphs.forEach(function (paragraph) {
+    const p = paragraph.join('<br>');
+    display_p.push(p);
+});
+
+$('body').html(display_p.join('<br><br>'));
+
+</script>
