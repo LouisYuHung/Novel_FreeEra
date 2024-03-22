@@ -35,3 +35,7 @@ function show_chapter(chapter_num) {
         $(`#chapter_${chapter_num}`).removeClass('d-none');
     }
 }
+
+function show_name(name) {
+    return `<u>${name}</u>`;
+}

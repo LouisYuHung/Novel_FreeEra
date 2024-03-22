@@ -5,6 +5,7 @@ const basicSetting = {
 
 const Puncuation = {
     start: '&nbsp;&nbsp;&nbsp;&nbsp;',
+    section_end: '<br>',
 }
 
 const CHAPTERS = {
